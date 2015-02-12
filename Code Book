@@ -1,0 +1,27 @@
+Code Book Getting and Cleaning Data Course Project
+Version 1.0
+
+==================================================================
+D.S.G. Variables run_Analysis.R explanation
+==================================================================
+
+- x_test: data frame in R containing information of x_test.txt file
+- y_test: data frame in R containing information of y_test.txt file
+- subject_test: data frame in R containing information of subject_test.txt file
+- x_train: data frame in R containing information of x_train.txt file
+- y_train: data frame in R containing information of y_train.txt file
+- activity_labels: data frame in R containing information of activity_labels.txt file
+- features: data frame in R containing information of features.txt file
+
+- y_x_train: data frame that get together the training set with the training labels. Dim 7352  562 
+- y_x_test: data frame that get together the test set with the test labels. Dim 2947  562
+- subject_y_x_train: data frame that get together y_x_train with the subjects who did the train. Dim 7352  563
+- subject_y_x_test: data frame that get together y_x_test with the subjects who did the test. Dim 2947  563
+
+- table_train_test: data frame that get together rows from subject_y_x_train and subject_y_x_test data frames. Dim 10299   563. First column is "subject", second is "activity" and the rest are the values of the train and test.
+
+- table_mean_std: data frame with columns information about subject, activity, mean and standard derivation. Dim 10299    87. Which means that 85 columns have any information that drives me to think that have anything to do with mean or standard deviation
+
+- table_mean_std_grouped: data frame that contains the mean value of all columns grouping by subject and activity from table_mean_std.
+
+For the record, "table_mean_std_grouped" is going to be called tidy_dataset.txt in the deliverable group of files that Coursera requests. 
